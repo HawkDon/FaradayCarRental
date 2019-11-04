@@ -1,0 +1,15 @@
+# Root
+.DS_Store
+.idea
+
+/frontend/.idea
+/frontend/target
+/frontend/frontend.iml
+/frontend/Dockerfile
+/frontend/.DS_Store
+
+/backend/.idea
+/backend/target
+/backend/backend.iml
+/backend/Dockerfile
+/backend/.DS_Store
