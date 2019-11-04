@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  frontend:
+    build:
+      dockerfile: Dockerfile
+      context: ./frontend
+    ports:
+      - "80:8080"
+    volumes:
+      - ./frontend/target/frontend.war:/usr/local/tomcat/webapps/ROOT.war
