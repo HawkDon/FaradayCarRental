@@ -5,9 +5,9 @@
 <html>
 <body>
 <% List<CarIdentifier> list = new ArrayList<CarIdentifier>(); %>
-<% String nameOfHotel = new HotelDetails("1", "This is a DTO from contracts", "some address", 2.2f, list ,"Some city").getName(); %>
+<% String test = new HotelDetails("1", "This is a DTO from contracts", "some address", 2.2f, list ,"Some city").getName(); %>
 <h2>
-    <% out.println(nameOfHotel); %>
+    <% out.println(test); %>
 </h2>
 </body>
 </html>
