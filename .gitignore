@@ -5,11 +5,10 @@
 /frontend/.idea
 /frontend/target
 /frontend/frontend.iml
-/frontend/Dockerfile
 /frontend/.DS_Store
+/frontend/Dockerfile.dev
 
 /backend/.idea
 /backend/target
 /backend/backend.iml
-/backend/Dockerfile
 /backend/.DS_Store
