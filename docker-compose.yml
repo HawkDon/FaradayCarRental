@@ -9,3 +9,19 @@ services:
       - "80:8080"
     volumes:
       - ./frontend/target/frontend.war:/usr/local/tomcat/webapps/ROOT.war
+    environment:
+      - MAVEN_REPO_USER=${MAVEN_REPO_USER}
+      - MAVEN_REPO_PASS=${MAVEN_REPO_PASS}
+      - MAVEN_REPO_URL=${MAVEN_REPO_URL}
+  backend:
+    build:
+      dockerfile: Dockerfile
+      context: ./backend
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./backend/target/backend.war:/usr/local/tomcat/webapps/ROOT.war
+    environment:
+      - MAVEN_REPO_USER=${MAVEN_REPO_USER}
+      - MAVEN_REPO_PASS=${MAVEN_REPO_PASS}
+      - MAVEN_REPO_URL=${MAVEN_REPO_URL}
