@@ -29,4 +29,6 @@ COPY --from=builder /backend/target/backend.war /usr/local/tomcat/webapps/ROOT.w
 
 EXPOSE 8080
 
+EXPOSE 1099
+
 CMD ["catalina.sh", "run"]
