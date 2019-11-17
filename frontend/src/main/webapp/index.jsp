@@ -12,6 +12,8 @@
 
 <a href="addBooking.jsp">Add new booking</a>
 <br />
+<a href="findCars.jsp">Find cars</a>
+<br />
 <a href="showBookingDetails.jsp">Show booking details</a>
 <!--<form action="main.jsp" method = "GET">
     First Name: <input type = "text" name = "first_name">

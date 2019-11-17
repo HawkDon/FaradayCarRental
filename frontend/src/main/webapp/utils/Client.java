@@ -22,9 +22,13 @@ public class Client {
         return iBooking;
     }
 
-    public static ICars getICars() throws RemoteException, NotBoundException, MalformedURLException {
-        ICars iCars = (ICars) Naming.lookup(iCarsEndpoint);
+    public static ICars getICars() {
+        try {
+            return (ICars) Naming.lookup(iCarsEndpoint);
+        } catch (Exception e) {
+            System.out.println("Failed to connect to server");
+        }
 
-        return iCars;
+        return null;
     }
 }
