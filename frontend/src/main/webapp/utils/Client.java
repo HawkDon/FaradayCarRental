@@ -12,8 +12,8 @@ import java.rmi.registry.Registry;
 
 public class Client {
 
-    private static String iBookingEndpoint = "//backend/iBookings";
-    private static String iCarsEndpoint = "//backend/iCars";
+    private static String iBookingEndpoint = "rmi://46.101.241.48:1099/Booking";
+    private static String iCarsEndpoint = "rmi://46.101.241.48:1099/Cars";
 
 
     public static IBooking getIBooking() throws RemoteException, NotBoundException, MalformedURLException {
